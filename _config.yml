@@ -1,0 +1,23 @@
+# Site settings
+title: Open Culture Consulting
+author: Felix Lohmeier, Sebastian Meyer
+email: office@opencultureconsulting.com
+lang: de-DE
+description: "Blog von F. Lohmeier + S. Meyer"
+url: "https://blog.opencultureconsulting.com"
+homepage: "https://www.opencultureconsulting.com"
+twitter_username: OCC_GbR
+github_username: opencultureconsulting
+
+# Build settings
+markdown: kramdown
+collections:
+  posts:
+    permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - liquid
+
+# Theme settings
+theme: jekyll-theme-minimal
+logo: /images/logo.png

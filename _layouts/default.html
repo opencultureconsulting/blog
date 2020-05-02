@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "de-DE" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="alternate" href="{{ "/feed.xml" | relative_url }}" type="application/rss+xml" title="{{ site.title | escape }}">
+    <link rel="shortcut icon" href="{{ "/images/favicon.png" | relative_url }}" type="image/png" sizes="196x196">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a href="{{ site-url | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+        </h1>
+        
+        {% if site.logo %}
+        <a href="{{ site.url | absolute_url }}">
+          <img class="centered" src="{{ site.logo | relative_url }}" alt="Logo" />
+        </a>
+        {% endif %}
+
+        <p class="centered">{{ site.description | default: site.github.project_tagline }}</p>
+
+        <p class="centered">
+          <small><a href="https://www.opencultureconsulting.com">Impressum</a> &mdash; <a href="https://www.opencultureconsulting.com/privacy.html">Datenschutzerklärung</a></small>
+        </p>
+      </header>
+      <section>
+        <small>
+          <a href="{{ site.url }}">Übersicht</a>
+          {% if page.url != "/" %}
+          &raquo; <a href="{{ page.url }}">{{ page.title }}</a>
+          {% endif %}
+        </small>
+
+        <hr />
+
+        {{ content }}
+
+      </section>
+      <footer>
+        <p>
+          <small>
+            <a href="http://creativecommons.org/licenses/by/4.0/" title="Alle Inhalte sind lizensiert unter Creative Commons Namensnennung 4.0 International">
+              <img src="/images/license.png" alt="CC BY 4.0" />
+            </a><br />
+            Hosted with <a href="https://jekyllrb.com">Jekyll</a> on <a href="https://pages.github.com">GitHub Pages</a><br />
+            Theme based on <a href="https://pages-themes.github.io/minimal/">Minimal</a> by <a href="https://github.com/orderedlist">orderedlist</a>
+          </small>
+        </p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

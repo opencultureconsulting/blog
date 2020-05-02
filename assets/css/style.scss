@@ -1,0 +1,33 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background-color: #a7c6da;
+}
+
+header h1 {
+  display: none;
+}
+header .centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+section blockquote {
+  border-left-color: #cccccc;
+}
+section hr {
+  background-color: #cccccc;
+}
+section small.author {
+  display: block;
+  margin: -20px 0 20px;
+}
+section th,
+section td {
+  border-color: #cccccc;
+}
